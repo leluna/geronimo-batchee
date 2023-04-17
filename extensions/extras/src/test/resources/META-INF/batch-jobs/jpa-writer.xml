@@ -13,7 +13,9 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<job id="flat-reader" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+<job id="flat-reader"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd"
+     xmlns="https://jakarta.ee/xml/ns/jakartaee" version="2.0">
   <step id="step1">
     <chunk>
       <reader ref="org.apache.batchee.extras.JpaWriterTest$TwoItemsReader" />

@@ -15,7 +15,9 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<batch-artifacts xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+<batch-artifacts xmlns="https://jakarta.ee/xml/ns/jakartaee"
+                 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/batchXML_2_0.xsd"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ref id="beanIOReader" class="org.apache.batchee.beanio.BeanIOReader" />
   <ref id="beanIOWriter" class="org.apache.batchee.beanio.BeanIOWriter" />
 </batch-artifacts>
