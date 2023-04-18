@@ -27,8 +27,8 @@
     <artifactId>batchee-extras</artifactId>
     <name>BatchEE :: Extensions :: Extras</name>
     <description>
-        This module implements readers/writers/... using no more than JavaEE APIs.
-        The mani constraint is to not use more than JavaEE but not depend on it for features (= be usable in J2SE).
+        This module implements readers/writers/... using no more than JEE APIs.
+        The mani constraint is to not use more than JEE but not depend on it for features (= be usable in J2SE).
     </description>
 
     <dependencies>

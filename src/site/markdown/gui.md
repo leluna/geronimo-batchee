@@ -30,16 +30,16 @@ For a quick out of the box solution to gather information about the JBatch envir
 `org.apache.batchee.jaxrs.server.JBatchResourceImpl` maps more or less `jakarta.batch.operations.JobOperator` API
 to JAXRS. It is available in `batchee-jaxrs-server` module.
 
-To define it with CXF you can use the `CXFNonSpringServlet` in a servlet container, in a JavaEE container
+To define it with CXF you can use the `CXFNonSpringServlet` in a servlet container, in a JEE container
 you surely already have it and just need to define a custom `jakarta.ws.rs.core.Application` with `JBatchResource`
 as class in `getClasses` and configure `org.apache.batchee.jaxrs.server.JBatchExceptionMapper` if you want
 to map `jakarta.batch.operations.BatchRuntimeException` to status 500:
 
 <pre class="prettyprint linenums"><![CDATA[
-<web-app version="2.5"
-         xmlns="http://java.sun.com/xml/ns/javaee"
+<web-app version="6.0"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
   <servlet>
     <servlet-name>CXFServlet</servlet-name>
     <display-name>JBatch JAXRS Servlet</display-name>
